@@ -45,42 +45,6 @@ export default function Footer({ currentScreen, setScreen }: FooterProps) {
           >
             Privacy Policy
           </a>
-          <a
-            href="#terms-of-service"
-            onClick={(e) => handleFooterClick('terms', e)}
-            className={`transition-colors active:scale-95 duration-100 ${
-              currentScreen === 'terms'
-                ? 'text-brand-primary font-serif italic font-medium'
-                : 'text-brand-ink-muted hover:text-brand-primary'
-            }`}
-            id="footer-nav-terms"
-          >
-            Terms of Service
-          </a>
-          <a
-            href="#cookie-policy"
-            onClick={(e) => handleFooterClick('cookies', e)}
-            className={`transition-colors active:scale-95 duration-100 ${
-              currentScreen === 'cookies'
-                ? 'text-brand-primary font-serif italic font-medium'
-                : 'text-brand-ink-muted hover:text-brand-primary'
-            }`}
-            id="footer-nav-cookies"
-          >
-            Cookie Policy
-          </a>
-          <a
-            href="#contact-support"
-            onClick={(e) => handleFooterClick('support', e)}
-            className={`transition-colors active:scale-95 duration-100 ${
-              currentScreen === 'support'
-                ? 'text-brand-primary font-serif italic font-medium'
-                : 'text-brand-ink-muted hover:text-brand-primary'
-            }`}
-            id="footer-nav-support"
-          >
-            Contact Support
-          </a>
         </nav>
       </div>
     </footer>

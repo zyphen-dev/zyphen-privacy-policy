@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-export type ScreenType = 'privacy' | 'terms' | 'cookies' | 'support';
+export type ScreenType = 'privacy';
 
 export interface FAQItem {
   id: string;

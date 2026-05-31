@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Shield, FileText, Cookie, Mail, Menu, X } from 'lucide-react';
+import { Shield, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { ScreenType } from '../types';
 
@@ -17,9 +17,6 @@ export default function Header({ currentScreen, setScreen }: HeaderProps) {
 
   const navigationItems: { id: ScreenType; label: string; icon: typeof Shield }[] = [
     { id: 'privacy', label: 'Privacy Policy', icon: Shield },
-    { id: 'terms', label: 'Terms of Service', icon: FileText },
-    { id: 'cookies', label: 'Cookie Policy', icon: Cookie },
-    { id: 'support', label: 'Contact Support', icon: Mail },
   ];
 
   const handleNavClick = (screen: ScreenType) => {

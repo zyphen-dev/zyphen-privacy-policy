@@ -8,9 +8,6 @@ import { Shield, Calendar, Clock, Sparkles } from 'lucide-react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PrivacyView from './components/PrivacyView';
-import TermsView from './components/TermsView';
-import CookieView from './components/CookieView';
-import SupportView from './components/SupportView';
 import { ScreenType } from './types';
 
 export default function App() {
@@ -26,33 +23,6 @@ export default function App() {
       dateValue: 'May 31, 2026',
       updateLabel: 'Last Updated:',
       updateValue: 'May 31, 2026',
-    },
-    terms: {
-      badge: 'Core Agreement',
-      titlePrimary: 'Zyphen',
-      titleSecondary: 'Terms of Service',
-      dateLabel: 'Effective Date:',
-      dateValue: 'May 31, 2026',
-      updateLabel: 'Last Updated:',
-      updateValue: 'May 31, 2026',
-    },
-    cookies: {
-      badge: 'Cache Setup',
-      titlePrimary: 'Zyphen',
-      titleSecondary: 'Cookie Policy',
-      dateLabel: 'Effective Date:',
-      dateValue: 'May 31, 2026',
-      updateLabel: 'Last Updated:',
-      updateValue: 'May 31, 2026',
-    },
-    support: {
-      badge: 'Help Desk Platform',
-      titlePrimary: 'Zyphen',
-      titleSecondary: 'Contact Support',
-      dateLabel: 'Provider Status:',
-      dateValue: 'Active',
-      updateLabel: 'Support Agent Response:',
-      updateValue: 'Personalized (~24h)',
     },
   };
 
@@ -111,9 +81,6 @@ export default function App() {
         {/* Dynamic Inner Screens Container */}
         <div className="transition-all duration-300">
           {currentScreen === 'privacy' && <PrivacyView />}
-          {currentScreen === 'terms' && <TermsView />}
-          {currentScreen === 'cookies' && <CookieView />}
-          {currentScreen === 'support' && <SupportView />}
         </div>
       </main>
 
