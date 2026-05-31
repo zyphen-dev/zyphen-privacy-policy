@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+
+  --color-brand-primary: #C4A484; /* Artistic Warm Sand */
+  --color-brand-primary-container: #1A1A1A; /* Solid Dark Base */
+  --color-brand-on-primary-container: #E5E5E5; /* Pristine Soft Light */
+  --color-brand-secondary: #A88B6A; /* Accent Bronze */
+  --color-brand-secondary-container: #141414;
+  --color-brand-on-secondary-container: #C4A484;
+  --color-brand-tertiary: #888888;
+  --color-brand-tertiary-container: #2A2A2A;
+  --color-brand-tertiary-fixed: #241F1A;
+  --color-brand-on-tertiary-fixed: #C4A484;
+  --color-brand-bg: #0D0D0D; /* Studio Deep Charcoal background */
+  --color-brand-ink: #E5E5E5; /* Crisp Primary White */
+  --color-brand-ink-muted: #888888; /* Sophisticated Secondary Gray */
+  --color-brand-surface-lowest: #141414; /* Card Base dark layers */
+  --color-brand-surface-low: #0D0D0D;
+  --color-brand-surface-container: #1F1F1F;
+  --color-brand-surface-variant: #2A2A2A;
+  --color-brand-outline-variant: rgba(255, 255, 255, 0.1);
+}
+
+@utility electric-gradient {
+  background: linear-gradient(135deg, #C4A484 0%, #8E775F 100%);
+}
+
+@utility electric-text {
+  background: linear-gradient(135deg, #C4A484 0%, #8E775F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility ambient-shadow {
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
